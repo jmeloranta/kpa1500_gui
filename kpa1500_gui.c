@@ -108,18 +108,18 @@ static void load_last_host(char *host, size_t size) {
 static const char* band_to_str(int band_num) {
 
   switch (band_num) {
-  case 0:  return "160m";
-  case 1:  return "80m";
-  case 2:  return "60m";
-  case 3:  return "40m";
-  case 4:  return "30m";
-  case 5:  return "20m";
-  case 6:  return "17m";
-  case 7:  return "15m";
-  case 8:  return "12m";
-  case 9:  return "10m";
-  case 10: return "6m";
-  default: return "---";
+  case 0:  return "160 m";
+  case 1:  return "80 m";
+  case 2:  return "60 m";
+  case 3:  return "40 m";
+  case 4:  return "30 m";
+  case 5:  return "20 m";
+  case 6:  return "17 m";
+  case 7:  return "15 m";
+  case 8:  return "12 m";
+  case 9:  return "10 m";
+  case 10: return "6 m";
+  default: return "----";
   }
 }
 
