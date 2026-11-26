@@ -393,7 +393,7 @@ static gboolean poll_amplifier(gpointer data) {
   
   // 6. Poll Amplifier PA Current (^VI;) -> ^VIvvv iii; (iii = tenths of Amps)
   if (kpa_query(app, "^VI;", resp) > 0 && sscanf(resp, "^VI%3d %3d;", &volts_x10, &curr_x10) == 2) {
-    snprintf(text, sizeof(text), "%.1f A", (float) curr_x10);
+    snprintf(text, sizeof(text), "%d A", curr_x10);
     gtk_label_set_text(GTK_LABEL(app->lbl_curr), text);
   }
   
