@@ -522,7 +522,7 @@ static void on_activate(GtkApplication *gtk_app, gpointer user_data) {
   gtk_label_set_text(GTK_LABEL(app->lbl_ref),  "0 W");
   gtk_label_set_text(GTK_LABEL(app->lbl_swr),  "1.0:1");
   gtk_label_set_text(GTK_LABEL(app->lbl_temp), "-- °C");
-  gtk_label_set_text(GTK_LABEL(app->lbl_curr), "0.0 A");
+  gtk_label_set_text(GTK_LABEL(app->lbl_curr), "0 A");
   
   // Thin forward power bar
   app->bar_fwd = gtk_progress_bar_new();
